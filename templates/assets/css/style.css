@@ -1,0 +1,260 @@
+/* reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2f363e;
+   
+}
+
+.contenido-general{
+    
+    width: 90%;
+}
+
+
+/* gestor de usuarios */
+
+.gestor-usuario{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.gestor-usuario .contenido-usuario{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.gestor-usuario .contenido-usuario h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.gestor-usuario .contenido-usuario .agregar{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+    background: #1f83f2;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* tabla */
+
+.tabla{
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: ifr;
+   
+}
+
+.contenido-tabla{
+    display: grid;
+    grid-template-columns: ifr;
+}
+
+.tabla-head{
+    background: #ff2c74;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.tabla-contenedor th{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* formulario ventana modal */
+
+.contenido{
+    position: relative;
+    width: 350px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 10px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.contenido form{
+    position: relative;
+}
+
+.contenido h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputBox span{
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    border-left: 4px solid #fff;
+    padding-left: 4px;
+    line-height: 1em;
+}
+
+.inputBox .box{
+    display: flex;
+}
+
+.inputBox .box .icon{
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    background: #ff2c74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.15rem;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+
+.inputBox .box .input{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(0,0,0,0.35),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+.inputBox .box input[type="submit"]{
+    background: #1f83f2;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background: #1f83f2;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+
+
+
+.formulario{
+    opacity : 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+
+.modal-fijo{
+  
+    transition: transform 1s;
+    transform: translateY(0%);
+    
+}
+
+/* esta clase se va a agregar cuando queremos que se vaya el mnodal */
+
+.modal-close{
+    transform: translateY(-200%)
+}
