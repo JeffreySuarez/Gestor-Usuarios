@@ -77,15 +77,17 @@ body{
 .tabla{
     margin-top: 30px;
     width: 100%;
-    height: 100vh;
+    
     display: grid;
     grid-template-columns: ifr;
+    height: auto;
    
 }
 
 .contenido-tabla{
     display: grid;
     grid-template-columns: ifr;
+  
 }
 
 .tabla-head{
@@ -97,10 +99,13 @@ body{
     letter-spacing: 2px;
     font-weight: 600;
     margin-top: 10px;
-}
+   
+    }
 
 .tabla-contenedor th{
     padding: 10px;
+  
+    
 }
 
 
